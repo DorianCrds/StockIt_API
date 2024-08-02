@@ -10,7 +10,7 @@ class ProductBase(BaseModel):
     image_url: str
 
 
-class Product(ProductBase):
+class ProductSchema(ProductBase):
     id: int
 
     class Config:

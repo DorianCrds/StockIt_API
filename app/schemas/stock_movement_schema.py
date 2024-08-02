@@ -9,7 +9,7 @@ class StockMovementBase(BaseModel):
     comment: typing.Optional[str]
 
 
-class StockMovement(StockMovementBase):
+class StockMovementSchema(StockMovementBase):
     id: int
 
     class Config:

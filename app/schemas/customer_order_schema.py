@@ -1,14 +1,14 @@
 from app.schemas import *
-from app.schemas.product_schema import Product
+from app.schemas.product_schema import ProductSchema
 
 
 class CustomerOrderBase(BaseModel):
     date: datetime.date
-    products: list[Product]
+    products: list[ProductSchema]
     status: str
 
 
-class CustomerOrder(CustomerOrderBase):
+class CustomerOrderSchema(CustomerOrderBase):
     id: int
 
     class Config:

@@ -1,14 +1,14 @@
 from app.schemas import *
-from app.schemas.product_schema import Product
+from app.schemas.product_schema import ProductSchema
 
 
 class CartBase(BaseModel):
     client_id: str
-    products: list[Product]
+    products: list[ProductSchema]
     status: str
 
 
-class Cart(CartBase):
+class CartSchema(CartBase):
     id: int
 
     class Config:
