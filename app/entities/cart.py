@@ -1,5 +1,5 @@
-from app.models import *
-from app.models.product import Product
+from app.entities import *
+from app.entities.product import Product
 
 cart_product_association = Table(
     'cart_product',

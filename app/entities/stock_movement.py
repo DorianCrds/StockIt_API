@@ -1,4 +1,4 @@
-from app.models import *
+from app.entities import *
 
 
 class StockMovement(Base):

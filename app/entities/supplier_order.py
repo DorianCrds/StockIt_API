@@ -1,5 +1,5 @@
-from app.models import *
-from app.models.product import Product
+from app.entities import *
+from app.entities.product import Product
 
 supplier_order_product_association = Table(
     'supplier_order_product',
